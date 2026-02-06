@@ -1,0 +1,42 @@
+genai-video-assistant/
+│
+├── app.py                      # Main Streamlit application
+├── requirements.txt            # Dependencies
+├── .env.example               # Environment variables template
+├── .gitignore
+├── README.md                  # Project documentation
+│
+├── src/                       # Source code
+│   ├── __init__.py
+│   ├── youtube_processor.py   # YouTube audio extraction
+│   ├── audio_checker.py       # Educational content validation
+│   ├── stt_processor.py       # Whisper speech-to-text
+│   ├── text_cleaner.py        # Text cleaning utilities
+│   ├── chunking.py           # Text chunking strategies
+│   ├── embeddings.py         # Embedding generation
+│   ├── vector_store.py       # Vector database operations
+│   ├── llm_handler.py        # LLM interface
+│   ├── features.py           # Main features implementation
+│   └── utils.py              # Helper functions
+│
+├── notebooks/                 # Jupyter notebooks for experimentation
+│   ├── 01_whisper_test.ipynb
+│   └── 02_rag_pipeline.ipynb
+│
+├── data/                      # Data storage
+│   ├── audio/                 # Extracted audio files
+│   ├── transcripts/           # Generated transcripts
+│   ├── vector_db/            # Vector database files
+│   └── temp/                 # Temporary files
+│
+├── tests/                     # Unit tests
+│   ├── __init__.py
+│   ├── test_youtube_processor.py
+│   └── test_features.py
+│
+└── web_ui/                    # Frontend components
+    ├── components/
+    │   ├── sidebar.py
+    │   └── chat_interface.py
+    └── styles/
+        └── custom.css

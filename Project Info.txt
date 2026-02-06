@@ -1,0 +1,41 @@
+GENAI PROJECT: I need to develop a gen ai project for my final year review. The below are my project info:
+
+Project Name: Multimodal RAG-based AI Video Learning Assistant
+
+Real Problem: Students waste hours on long videos and can’t revise easily.
+
+Research Gap:
+
+  Existing tools:
+
+  > Only generate plain summaries
+  > No topic segmentation
+  > No Q&A with video
+  > No personalization
+  > No learning analytics
+
+  My system:
+
+  > Topic-wise understanding
+  > Interactive chat
+  > Personalized summaries
+  > Quiz generation
+
+
+Overall Project Flow:
+
+Input YouTube URL
+ → Audio extraction and checks whether it is a educational, learning or study related video 
+ → Speech-to-text (Whisper)
+ → Text cleaning
+ → Chunking
+ → Embeddings
+ → Vector DB
+ → LLM
+ → Features:
+     - Topic-wise summary
+     - Chat with video
+     - Quiz generator
+ → Web UI
+ → Cloud deployment
+
